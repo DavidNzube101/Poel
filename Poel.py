@@ -41,24 +41,24 @@ def openDashboard():
 
     
     def runProject():
-      def yes():
-        minapp = CTk()
-        minapp.geometry("10x10")
-        minapp.resizable(height=False, width=False)
-        command = f"{DIR}\\main.py"
-        command = f"python {command}"
-        BluBatch.create_batch_files(command)
-        webbrowser.open("http://127.0.0.1:80")
-        minapp.mainloop()
+      messagebox.showinfo("Poel", "Oops........disabled for now")
+      # def yes():
+      #   minapp = CTk()
+      #   minapp.geometry("10x10")
+      #   minapp.resizable(height=False, width=False)
+      #   command = f"{DIR}\\main.py"
+      #   command = f"python {command}"
+      #   BluBatch.create_batch_files(command)
+      #   webbrowser.open("http://127.0.0.1:80")
+      #   minapp.mainloop()
 
-      askToRun = messagebox.askyesno(f"Run {project_name}", f"Do you want to proceed to running `{project_name}`. Alternatively, you can go to this address `http://127.0.0.1:80` in your browser.")
+      # askToRun = messagebox.askyesno(f"Run {project_name}", f"Do you want to proceed to running `{project_name}`. Alternatively, you can go to this address `http://127.0.0.1:80` in your browser.")
 
-      if askToRun is True:
-        yes()
+      # if askToRun is True:
+      #   yes()
 
-      else:
-        webbrowser.open("http://127.0.0.1:80")
-
+      # else:
+      #   webbrowser.open("http://127.0.0.1:80")
       # subprocess.run(, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True, shell=True)#
 
     def manageProject():
